@@ -5,31 +5,42 @@
 	Most recent revision:
 -->
 <html lang="en">
-	<header>
+	<head>
 		<title>TJ Johnson's Portfolio</title>
-	</header>
+		<link href="teststyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			<style>
+    header {
+        background-color: darkgray;
+    }
+</style>
+		</style>
+	</head>
 	
 	<body>
-		<h1>TJ Johnson's Portfolio</h1>
+		<main>
+			<header>
+				<h1>TJ Johnson's Portfolio</h1>
+			</header>
 		
-	<nav>
-		<hr />
+	<nav class="border">
+		<hr style="border: thin dotted red;" />
 			<p><a href="">Home</a></p>
 			<p><a href="projects.html">Projects</a></p>
 			<p><a href="contact.html">Contact Me</a></p>
 			<p><a href="testimonials.html">Testimonials</a></p>
-		<hr />
+		<hr style="width: 50%; border: 2px solid blueviolet;" />
 	</nav>
 		
 		<section>
-			<article id="about-me">
+			<article class="border" id="about-me">
 				<h2><em>About Me</em></h2>
 				<img src="images/smile-2072907_640.jpg" alt="Portrait of Me" />
 				<p>Sed nisi est, aliquam non gravida et, euismod id ex. <strong>Praesent molestie metus justo</strong>, non tristique nisl blandit id. Proin porta nisl eros, vitae laoreet eros vestibulum in. Integer faucibus malesuada purus quis consectetur.</p> 
 				<p>Vivamus nec sollicitudin diam, <strong>at posuere augue</strong>. Nunc pulvinar imperdiet massa ut tincidunt. Pellentesque ac tincidunt metus, nec molestie magna.</p>
 			</article>
 		
-			<article id="experiences">
+			<article id="experience">
 				<h2><em>Past Experiences</em></h2>
 				<img src="images/writing-828911_640.jpg" alt="Business Writing" />
 				<table>
@@ -92,9 +103,10 @@
 						</ul>
 			</article>
 		</section>
-		<footer> 
-			<hr />
-			<p>&copy; 2020 TJ Johnson. All rights reserved.</p>
-		</footer>
+			<footer style="background-color: fuchsia">
+				<hr />
+				<p>&copy; 2020 TJ Johnson. All rights reserved.</p>
+			</footer>
+		</main>
 	</body>
 </html>
